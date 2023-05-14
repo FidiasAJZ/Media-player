@@ -361,6 +361,9 @@ class CardProfile extends React.Component {
             });
     }
 
+    //ComponentDidMount es invocado inmediatamente después de que un componente sea montado en el DOM y se utiliza para agregar eventos escuchadores a los elementos del DOM.
+
+    //En este caso, las líneas de código dentro de este método agregan varios eventos escuchadores a los elementos playerRef y timelineRef.
     componentDidMount() {
         this.playerRef.addEventListener("timeupdate", this.timeUpdate, false);
         this.playerRef.addEventListener("ended", this.nextSong, false);
@@ -368,6 +371,10 @@ class CardProfile extends React.Component {
         this.timelineRef.addEventListener("mousemove", this.hoverTimeLine, false);
         this.timelineRef.addEventListener("mouseout", this.resetTimeLine, false);
     }
+
+    //ComponentWillUnmount, es invocado inmediatamente antes de que un componente sea desmontado del DOM. Se utiliza para eliminar los eventos escuchadores agregados previamente en el método componentDidMount.
+
+    //Las líneas de código dentro de este método eliminan los eventos escuchadores agregados previamente a los elementos playerRef y timelineRef.
     componentWillUnmount() {
         this.playerRef.removeEventListener("timeupdate", this.timeUpdate);
         this.playerRef.removeEventListener("ended", this.nextSong);
@@ -378,6 +385,8 @@ class CardProfile extends React.Component {
 
 
     render() {
+
+        //Este código está realizando una desestructuración del objeto this.state, extrayendo las propiedades musicList, index, currentTime y pause y asignándolas a las constantes correspondientes. Es una forma más concisa de acceder y utilizar las propiedades de un objeto en JavaScript.
         const {
             musicList,
             index,
@@ -386,7 +395,7 @@ class CardProfile extends React.Component {
         } = this.state;
 
         const currentSong = musicList[index];
-        //Agregar letra
+        //Agregar el reproductor 
         return (
             React.createElement("div", {className: "card"},React.createElement("div", {className: "current-song"},React.createElement("audio", {ref: ref => this.playerRef = ref},React.createElement("source", {src: currentSong.audio,type: "audio/ogg"}), "Your browser does not support the audio element."),
                     React.createElement("div", {className: "img-wrap"},React.createElement("img", {src: currentSong.img})),
