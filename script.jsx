@@ -1,7 +1,10 @@
 //Define o modifica una propiedad en un objeto. Si la propiedad ya existe en el objeto, se define con el valor proporcionado y se establecen las configuraciones de enumerabilidad, configurabilidad y capacidad de escritura según los parámetros proporcionados. Si la propiedad no existe, se agrega al objeto con el valor proporcionado. La función retorna el objeto modificado.
 
+//En resumen, la función _defineProperty define/agrega una propiedad a un objeto, y es una utilidad común en la programación de javascript.
 function _defineProperty(obj, key, value) {
     if (key in obj) {
+
+        //This code checks if a given 'key' already exists in a given 'obj'. If it exists, it uses the Object.defineProperty() method to define or update a specific property of the object with the specified value. The other parameters in the object passed to Object.defineProperty() specify whether the property is enumerable, configurable, and writable. If the key does not exist in the object, it creates a new property with the specified value. Finally, it returns the updated object.
         Object.defineProperty(obj, key, {
             value: value,
             enumerable: true,
@@ -13,13 +16,25 @@ function _defineProperty(obj, key, value) {
     }
     return obj;
 }
+// Clase en React llamada CardProfile que extiende de la clase Component.
+
+//La clase tiene un constructor que recibe los argumentos ...args y llama al constructor de la clase "Component" usando la palabra clave super, lo que permite que la instancia de CardProfile tenga acceso a las propiedades y métodos de Component.
 
 class CardProfile extends React.Component {
     constructor(...args) {
         super(...args);
+
+        //El método "_defineProperty" se utiliza para asignar estas propiedades al objeto "this" dentro de la clase, permitiendo que accedan a ellas y las usen en otros métodos de la clase.
+
+        //El estado de React es un objeto que contiene datos dinámicos y puede ser modificado durante la vida útil de un componente.
         _defineProperty(this, "state", {
-            index: 3,
+            index: 10, //Esto hace que cargue la primer canción del arreglo, en este caso sería la canción 11.
             currentTime: '0:00',
+            //This code defines an object named "musicList" with a single property. The property is an array that contains an object with key-value pairs that define the attributes of a music track.
+
+            //This code defines an object named "state" with four properties: "index", "currentTime", "musicList", and "pause". "index" is set to 1, indicating that the first song in the "musicList" array will be played. "currentTime" is set to '0:00' initially.
+
+            // "musicList" is an array of objects containing information about individual songs in the playlist such as name, author, image, audio file, duration, and lyrics. "pause" is set to "false", indicating that no pause action is currently in effect.
             musicList: [{
                     name: 'Coldplay - A Sky Full Of Stars',
                     author: 'Coldplay',
@@ -145,7 +160,7 @@ class CardProfile extends React.Component {
             ],
             pause: false});
 
-
+        //It calculates the total duration of the current audio file being played. It also calculates the percentage of the audio file that has already been played. Using this percentage, it sets the width of the "playheadRef" element to reflect the progress of the audio file being played.
         _defineProperty(this, "changeCurrentTime",
             e => {
                 const duration = this.playerRef.duration;
@@ -160,6 +175,7 @@ class CardProfile extends React.Component {
                 this.playerRef.currentTime = duration * userClickWidhtInPercent / 100;
             });
 
+        //it calculates the duration of the audio file being played by the player represented by "this.playerRef". Using the width of the progress bar element ("timelineRef"), and the x-coordinate of the user click inside the progress bar element, it calculates the percentage of the audio file that corresponds to where the user clicked. 
         _defineProperty(this, "hoverTimeLine",
 
             e => {
@@ -182,6 +198,7 @@ class CardProfile extends React.Component {
                 }
             });
 
+        //The method resets the width of the "hoverPlayheadRef" element to 0. This method is used to reset the progress bar and time display when the user stops hovering over it.
         _defineProperty(this, "resetTimeLine",
 
             () => {
@@ -224,6 +241,7 @@ class CardProfile extends React.Component {
                 } = this.state;
                 const currentSong = musicList[index];
                 const audio = new Audio(currentSong.audio);
+                console.log('Hola diste play');
                 this.playerRef.load();
             });
 
@@ -276,6 +294,7 @@ class CardProfile extends React.Component {
                 const audio = new Audio(currentSong.audio);
                 if (!this.state.pause) {
                     this.playerRef.play();
+                    olasMusica(currentSong.audio);
                 } else {
                     this.playerRef.pause();
                 }
@@ -329,6 +348,7 @@ class CardProfile extends React.Component {
                 if(volume < 0) volume = 0;
                 this.setVolume(volume);
             });
+
         
         _defineProperty(this, "plusVolume",
             () => {
@@ -395,19 +415,30 @@ class CardProfile extends React.Component {
         } = this.state;
 
         const currentSong = musicList[index];
+
+        const lyrics = currentSong.lyrics;
+        
+        /* console.log(song); */
         //Agregar el reproductor 
         return (
-            React.createElement("div", {className: "card"},React.createElement("div", {className: "current-song"},React.createElement("audio", {ref: ref => this.playerRef = ref},React.createElement("source", {src: currentSong.audio,type: "audio/ogg"}), "Your browser does not support the audio element."),
-                    React.createElement("div", {className: "img-wrap"},React.createElement("img", {src: currentSong.img})),
+            React.createElement("div", {className: "card"}, 
+                React.createElement("div", {className: "current-song"},
+                                    React.createElement("audio", {ref: ref => this.playerRef = ref},
+                                    React.createElement("source", {src: currentSong.audio,type: "audio/ogg"}), 
+                                    "Your browser does not support the audio element."),
+                React.createElement("div", {className: "img-wrap"},
+                                    React.createElement("img", {src: currentSong.img})),
 
-                    React.createElement("span", {className: "song-name"}, currentSong.name),
-                    React.createElement("span", {className: "song-autor"}, currentSong.author),
+                React.createElement("span", {className: "song-name"}, currentSong.name),
+                React.createElement("span", {className: "song-autor"}, currentSong.author),
 
-                    React.createElement("div", {className: "time"}, React.createElement("div", {className: "current-time"}, currentTime),
-                        React.createElement("div", {className: "end-time"}, currentSong.duration)),
+                React.createElement("div", {className: "time"}, 
+                    React.createElement("div", {className: "current-time"}, currentTime),
+                    React.createElement("div", {className: "end-time"}, currentSong.duration)),
 
-                    React.createElement("div", {ref: ref => this.timelineRef = ref,id: "timeline"},React.createElement("div", {ref: ref => this.playheadRef = ref,id: "playhead"}),
-                        React.createElement("div", {
+                React.createElement("div", {ref: ref => this.timelineRef = ref,id: "timeline"},React.createElement("div", {ref: ref => this.playheadRef = ref,id: "playhead"}),
+
+                    React.createElement("div", {
                             ref: ref => this.hoverPlayheadRef = ref,
                             class: "hover-playhead",
                             "data-content": "0:00"
@@ -502,18 +533,142 @@ class CardProfile extends React.Component {
                                 index === key ?
                                 currentTime :
                                 music.duration)))),
+                            
+                            
+                            /* React.createElement("div", {className: "lyrics"}, 
+                                React.createElement("textarea", {
+                                className: "lyrics-text",
+                                readonly: true,
+                                value: lyrics,
+                                spellcheck: false,
+                                disabled: true,
+                                rows: lyrics.split("\n").length,
+                                style: {resize:"none"}})), */
 
-                React.createElement("div", {className: "lyrics"}, 
-                        React.createElement("textarea", {
-                        className: "lyrics-text",
-                        readonly: true,
-                        value: currentSong.lyrics,
-                        spellcheck: false,
-                        disabled: true,
-                        rows: currentSong.lyrics.split("\n").length,
-                        style: {resize:"none"}}))
+                            React.createElement(Lyrics, {lyrics: lyrics}),
+
+
+                React.createElement(Footer) //Colocando componente anidado de prueba.
             ));
     }
 }
 
-ReactDOM.render(React.createElement(CardProfile, null), document.getElementById('root'));
+//Componente de prueba para anidar con el componente principal CardProfile
+const Footer = () =>{
+    return React.createElement(
+      'div', 
+      {id: 'greeting'}, 
+      React.createElement('h1', {}, 'HELLO WORLD IM HERE')
+    );
+};
+
+//Componente para la mostrar la letra de la canción.
+const Lyrics = (props) =>{
+    const lyricsRows = props.lyrics.split("\n").length;
+    const letra = props.lyrics;
+    
+    return React.createElement("div", {className: "lyrics"}, 
+    React.createElement("textarea", {
+      className: "lyrics-text",
+      readOnly: true,
+      value: letra,
+      spellCheck: false,
+      disabled: true,
+      rows: lyricsRows,
+      style: {resize:"none"}
+    })
+  );
+};
+
+//Misma funcion de arriba con formato tags
+/* function Hola(){
+    return (
+      <div>
+        <h1>Hello World</h1>
+      </div>
+    )
+} */
+
+//Anidar componentes
+/* const CardProfileWithGreeting = () => { 
+    return React.createElement( 
+        CardProfile, null, 
+        React.createElement(Greeting)
+        );
+}; */
+
+ReactDOM.render(
+    React.createElement(CardProfile, null), document.getElementById('root')
+);
+//////////////////////////////////////////////////////////////////////////////////////
+//Música
+const container = document.getElementById('root');
+const canvas = document.getElementById('canvas1');
+const file = document.getElementById('fileupload');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+const ctx = canvas.getContext('2d');
+//ctx.globalCompositeOperation = 'difference'
+ctx.lineCap = 'round';
+var audioSource;
+var analyser = '';
+var count = 0;
+
+function olasMusica(song){
+    if (count == 0){
+        //nada
+    }else{
+        audioSource.disconnect();
+        console.log('holi');
+    }
+    count++;
+    const audio1 = document.querySelector('audio');
+    console.log(song);
+    const audioContext = new AudioContext();
+    //audio1.src = song.audio;
+    //audio1.play();
+    audioSource = audioContext.createMediaElementSource(audio1);
+    analyser = audioContext.createAnalyser();
+    audioSource.connect(analyser);
+    analyser.connect(audioContext.destination);
+    analyser.fftSize = 128;
+    const bufferLength = analyser.frequencyBinCount;
+    const dataArray = new Uint8Array(bufferLength);
+
+    const barWidth = 40;
+    let barHeight;
+    let x;
+
+    function animate(){
+        x = 0;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        analyser.getByteFrequencyData(dataArray);
+        drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray);
+        requestAnimationFrame(animate);
+    }
+    animate();
+}
+
+function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
+    for (let i = 0; i < bufferLength; i++){
+        barHeight = dataArray[i] * 1.2;
+        ctx.save();
+        ctx.translate(canvas.width/2, canvas.height/2);
+        ctx.rotate(i * Math.PI * 4/ bufferLength);
+        const hue = 240 + i * 1.5;
+        ctx.lineWidth = barHeight/10;
+        ctx.strokeStyle = 'hsl(' + hue + ',100%, 50%)';
+        ctx.fillStyle = 'hsl(' + hue + ',100%, 50%)';;
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        ctx.lineTo(0, barHeight);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, barHeight + barHeight/5 , barHeight/20, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(0, barHeight + barHeight/2, barHeight/10, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+    }
+}
