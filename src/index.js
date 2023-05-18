@@ -42,7 +42,7 @@ class CardProfile extends React.Component {
             musicList: [{
                     name: 'Coldplay - A Sky Full Of Stars',
                     author: 'Coldplay',
-                    img: '../imgs/skyfull.jpg',
+                    img: '../imgs/skyfull.gif',
                     audio: '../sngs/Coldplay - A Sky Full Of Stars.mp3',
                     duration: '4:34',
                     lyrics: "'Cause you're a sky,\n'cause you're a sky full of stars.\nIm gonna give you my heart.\n\nCause you're a sky, \n'cause you're a sky full of stars. \n'Cause you light up the path.\n\nI don't care, go on and tear me apart\nI don't care if you do, ooh-ooh, ooh\n'Cause in a sky, \n'cause in a sky full of stars\nI think I say you.\n\n'Cause you're a sky,\n'cause you're a sky full of stars\nI wanna die in your arms, oh, oh-oh\n'Cause you get lighter the more it gets dark,\nI'm gonna give you my heart, oh.\n\nI don't care, go on and tear me apart\nI don't care if you do, ooh-ooh, ooh.\n'Cause in a sky, 'cause in a sky full of stars\nI think I see you,\nI think I see you.\n\n'Cause you're a sky, you're a sky full of stars.\nSuch a heavenly view\nYou're such a heavenly view.\nYeah, yeah, yeah, ooh."
@@ -50,7 +50,7 @@ class CardProfile extends React.Component {
                 {
                     name: 'Moondust',
                     author: 'Jaymes Young',
-                    img: '../imgs/moondust.jpg',
+                    img: '../imgs/moondust.webp',
                     audio: '../sngs/Jaymes Young - Moondust.mp3',
                     duration: '3:43',
                     lyrics: "I'm building this house, on the moon\nLike a lost, astronaut.\nLooking at you, like a star,\nFrom the place, the world forgot.\n\nAnd there's nothing, that I can do,\nExcept bury my love for you.\n\nThe brightness of the sun,\nwill give me just enough,\nTo bury my love(to bury my love),\nIn the Moondust,\nI long to hear your voice,\nbut still I make the choice,\nTo bury my love (to bury my love),\nIn the Moondust.\n\nNothing can breathe, in the space,\nColder than, the darkest sea,\nI have dreams about the days,\nDriving through your sunset breeze.\n\nBut the first thing that I will do\nIs bury my love for you.\n\nThe brightness of the sun,\nwill give me just enough,\nTo bury my love(to bury my love),\nIn the Moondust,\nI long to hear your voice,\nbut still I make the choice,\nTo bury my love (to bury my love),\nIn the Moondust.\n\nI'm a castaway,\nand men reap what they sow\nAnd I say what I know, to be true.\nYeah, I'm living far away,\non the face of the moon\nI've buried my love to give the world to you.\n"
@@ -58,7 +58,7 @@ class CardProfile extends React.Component {
                 {
                     name: 'Avalanches',
                     author: 'Alma feat Remedy Kill Paris',
-                    img: '../imgs/avalanches.jpg',
+                    img: '../imgs/avalanches.gif',
                     audio: '../sngs/Alma   Avalanches (feat Sound Remedy  Kill Paris).mp3',
                     duration: '4:31',
                     lyrics: "Will I see you on the brighter side of this life.\nAs the rocks fall be stronger at the bottom babe.\n\nThe avalanche will always try and hide the pain.\nBut if I find you nothing will ever be the same.\n\nJust hold onto the sun.\nNever feel alone.\nBe the one you want.\nWhen avalanches fall.\n\nSpread your winas.\n\nSpread your winas.\nAnd leave the shadows.\nSo damn far beneath you.\nStrange the dar.\nNothing to breathe but love.\n\nJust hold onto the sun.\nNever feel alone.\nBe the one you want.\nWhen avalanches fall.\n\nSpread your winas.\nYeah we ain't down."
@@ -67,7 +67,7 @@ class CardProfile extends React.Component {
                 {
                     name: 'Wake up',
                     author: 'EDEN',
-                    img: '../imgs/eden.jpg',
+                    img: '../imgs/eden.gif',
                     audio: '../sngs/EDEN - Wake Up.mp3',
                     duration: '4:39',
                     lyrics: "'Cause we've been driving so long,\nI can't remember how we got here,\nOr how we survived so long,\nI'm trying to run from our pride,\n'Til you set fire to my atmosphere,\nAnd I remember how I spent the twenty-third\nFeeling six feet under\nWhen I'm 30,000 feet in the air,\nChasing that sundown,\nSo far East, I'm Westbound,\nFeeling like the edge of this world is near.\n\nBut you'll feel better when you wake up,\nSwear to God I'll make up,\nEverything and more when I get back someday.\nThis is more than just a phase, love.\nShooting stars all break up\nAnd even though it seems like half the world away.\n\nThings will be better in America,\nHeard the streets are gold there,\nMaybe I can fly you out this place someday,\nChasing dreams like I'm on novocain,\nScreaming through your airways,\nLooking back, I almost thought I heard you say.\n\nStay, you're not gonna leave me,\nThis place is right where you need to be,\nAnd why your words gotta mean so much to them,\nAnd they mean nothing to me?\n\nSo stay, you're not what you're hearing,\n'Cause I've been watching you changing,\nAnd who said you're one in a million, Anyway?\n\n'Cause you see only what you want to,\nYour tunnel vision haunts you,\nAnd you can't see what's wrong,\nAnd you keep sleeping through the PM,\nEyes wide open when you're dreaming,\nYou're sleepwalking, just keep talking,\nAnd maybe you can talk your walk out of this deep end,\nNo B plan in your system,\nJust tell me what you're thinkin,\nI'm scared that you might fall,\nBut you're not,\nBut you're not.\n\nAnd you'll feel better when you wake up,\nTaking off your makeup,\nSun always seems to wash our fears away,\nAnd it's always shining somewhere,\nI just gotta get there,\nAnd even though it seems like half the world away.\n\nThings will be better in America,\nHeard the streets are gold there,\nMaybe I can fly you out this place someday,\nChasing dreams like I'm on novocain,\nScreaming through your airways,\nLooking back, I almost thought I heard you say.\n\nStay, you're not gonna leave me,\nThis place is right where you need to be,\nAnd why your words gotta mean so much to them,\nAnd they mean nothing to me?\n\nSo stay, you're not what you're hearing,\n'Cause I've been watching you changing,\nAnd who said you're one in a million.\n\nYou're so much better than that...\nYou're so much better than that...\nYou're so much better than that...\n"
@@ -122,9 +122,17 @@ class CardProfile extends React.Component {
                     lyrics: "[Verse 1: Krista Marina]\nI want you to show me\nHow to get to know\nSomeone like you, someone like you\nI want you to know me\n'Cause I know then you'll see\nWe can be true, we can be true.\n\nI want you to see what I see in us\nSomething so real, something so real\nI want you to see that this is a love\nThat we both feel, that we both feel.\n\n[Chorus: Krista Marina]\nAnd how will we ever know\nIf the love will ever grow\nWithout trying, without trying\nAnd how will we ever see\nIf we are meant to be\nIt's terrifying, it's terrifying.\n\n[Drop: Arc North & Krista Marina]\nThat we are meant to be\nWe are, we are\nThat we are meant to be\nThat we are meant to be\nWe are, we are\nThat we are meant to be\n\n[Verse 2: Krista Marina]\nWe've both been there before\nWhen love shuts the door\nIt's a losing game, it's a losing game\nBut this time it's more\nThan another love war\nThis ain't the same, this ain't the same\n\nThey say love heals all\nIt makes it all alright\nIn time, in time\nMy heart still feels the breaking\nBut you make my world so bright\nIt feels so right, it feels so right\n\n[Chorus: Krista Marina]\nAnd how will we ever feel\nThat what we got is real\nThere's no denying, there's no denying\nAnd how will we ever see\nIf we are meant to be\nIt's terrifying, it's terrifying\nAnd how till we ever know\nIf the love will ever grow\nWithout trying, without trying\nAnd how will we ever see\nIf we are meant to be\nIt's terrifying, it's terrifying\n\n[Drop: Arc North & Krista Marina]\nThat we are meant to be\nWe are, we are\nThat we are meant to be\nThat we are meant to be\nWe are, we are\nThat we are meant to be.\n"
                 },
                 {
+                    name: 'Space Cowboy',
+                    author: 'Flipturn',
+                    img: '../imgs/spacecowboy.gif',
+                    audio: '../sngs/Flipturn-Space Cowboy.mp3',
+                    duration: '4:06',
+                    lyrics: "Oh mother I am so afraid\nI only started walking\nJust yesterday\nBut now I've joined the Calvary\nAnd my heads been shaved\n\nAnd I cry like your baby\nBut I'm trying not to break\nIn the art of war\nIs there something more\nOr am I alone?\nI never know what I'm looking for\nJust something more\n\nSometimes I wonder\nIf I were bird\nWould I be so serious\nIf my feet could leave the dirt\nCuz down here I fear\nI've become far too concerned\nWith everything I'm given\nAnd nothing that I've earned\n\nIn the art of war\nIs there something more\nOr am I alone?\nI never know what I'm looking for\nJust something more\n\nDear mother I'm tired\nI feel I'm over my head\nI'm haunted I'm wired\nI only wanted yesterday\nThis time I'm not trying\nThis time I'll feel no pain\nI'm haunted I'm wired\nDear mother I'm tired\n"
+                },
+                {
                     name: 'Running In The Night',
                     author: 'FM 84',
-                    img: '../imgs/fm84.jpg',
+                    img: '../imgs/fm84.gif',
                     audio: '../sngs/FM84-Running In The Night(feat Ollie Wride).mp3',
                     duration: '4:31',
                     lyrics: "I used to be the one,\nI used to be your gateway dreamer,\nI couldn't get enough,\nThinking that we would last forever,\nDon't know what you're thinking of\nSlipping further out of reach,\nTo the edge of town we could go,\nAway from all all the world to see.\n\nYou were wild trying to set yourself free,\nI didn't see the signs right in front of me.\n\nOh, I'm running in the night so soon,\nI've got nothing left to lose,\nI'm leaving it all behind, running in the night with you,\nI won't let you get away again,\nWe can see it through to the end,\nBut whatever we do,\nI'm running in the night with you.\n\nI used to be the one,\nI used to be your place to land,\nUnder the shadows,\nInto the palm of my hand,\nYou're always changing the situation,\nJust when we found paradise,\nYou're always shutting down the conversation,\nI can never read your mind.\n\nOh, I'm running in the night so soon,\nI've got nothing left to lose,\nI'm leaving it all behind,\nrunning in the night with you,\nI won't let you get away again,\nWe can see it through to the end,\nBut whatever we do,\nI'm running in the night with you.\n\nAhh, Running with the night,\nAah, I'm running with the night.\n\nI used to be the one,\nI used to be your gateway dreamer,\nI couldn't get enough,\nThinking that we would last forever.\n\nOh, I'm running in the night so soon,\nI've got nothing left to lose,\nI'm leaving it all behind, running in the night with you,\nI won't let you get away again,\nWe can see it through to the end,\nBut whatever we do,\nI'm running in the night with you.\nI won't let you get away again,\nWe can see it through to the end,\nBut whatever we do,\nI'm running in the night with you."
@@ -132,7 +140,7 @@ class CardProfile extends React.Component {
                 {
                     name: 'Into The Night',
                     author: 'Nero',
-                    img: '../imgs/nero.jpg',
+                    img: '../imgs/nero.gif',
                     audio: '../sngs/Nero-Into The Night.mp3',
                     duration: '4:48',
                     lyrics: "[Chorus 1: Daniel Stephens]\nBaby, let’s drive into the night,\nJust get up and go, leave our worlds behind,\nIt’s so easy if you just say that you might,\nJust get up and go, leave it all behind.\n\n[Chorus 2: Alana]\nBaby, I just wanna get it right,\nLet’s just take it slow, I hope that you don’t mind\nIt’s so easy if you wait another night,\nJust go with the flow, leave it all behind,\nJust go with the flow, leave it all behind,\nJust go with the flow, leave it all behind.\n\n[Chorus 1: Daniel Stephens],\nBaby, let’s drive into the night,\nJust get up and go, leave our worlds behind,\nIt’s so easy if you just say that you might,\nJust get up and go, leave it all behind.\n\n[Chorus 2: Alana]\nBaby, I just wanna get it right,\nLet’s just take it slow, I hope that you don’t mind,\nIt’s so easy if you wait another night,\nJust go with the flow, leave it all behind.\n\n[Chorus 1: Daniel Stephens]\nBaby, let’s drive into the night,\nJust get up and go, leave our worlds behind,\nIt’s so easy if you just say that you might,\nJust get up and go, leave it all behind.\n\n[Bridge: Daniel Stephens]\nSo baby, let’s just get away tonight,\nPack up all your bags, start another life,\nIf we leave right now,\nwe'll be there before it's light,\nDo you wanna go, leave it all behind?\n\n[Chorus 2: Alana]\nBaby, I just wanna get it right,\nLet’s just take it slow, I hope that you don’t mind,\nIt’s so easy if you wait another night,\nJust go with the flow, leave it all behind.\n\n[Chorus 2: Alana]\nBaby, I just wanna get it right,\nLet’s just take it slow, I hope that you don’t mind,\nIt’s so easy if you wait another night,\nJust go with the flow, leave it all behind,\nJust go with the flow, leave it all behind,\nJust go with the flow, leave it all behind.\n"
@@ -140,7 +148,7 @@ class CardProfile extends React.Component {
                 {
                     name: 'Safe and Sound',
                     author: 'Capital Cities',
-                    img: '../imgs/capital.jpg',
+                    img: '../imgs/capital.gif',
                     audio: '../sngs/Capital Cities - Safe And Sound (Official Music Video).mp3',
                     duration: '3:46',
                     lyrics: "[Verse 1]\nI could lift you up,\nI could show you what you wanna see and take you where you wanna be\nYou could be my luck,\nEven if the sky is falling down, I know that we'll be safe and sound\n\n[Chorus]\nWe're safe and sound.\n\n[Verse 2]\nI could fill your cup,\nYou know my river won't evaporate this world we still appreciate,\nYou could be my luck,\nEven in a hurricane of frowns,\nI know that we'll be safe and sound.\n\n[Chorus]\n(Safe and sound)\nWe're safe and sound,\n(Safe and sound)\nWe're safe and sound,\n(Hold your ground)\nWe're safe and sound\n(Safe and sound).\n\n[Verse 3]\nI could show you love,\nIn a tidal wave of mystery, you'll still be standing next to me\nYou could be my luck\nEven if we're six feet underground,\nI know that we'll be safe and sound\n[Chorus]\nWe're safe and sound\n(Safe and sound)\n(Safe and sound)\n(Hold your ground)\n(Safe and sound).\n\n[Bridge]\nI could lift you up,\nI could show you what you wanna see and take you where you wanna be\nYou could be my luck\nEven if the sky is falling down, I know that we'll be safe and sound.\n\n[Verse 4]\nI could lift you up,I could show you what you wanna see and take you where you wanna be\nYou could be my luck,\nEven if the sky is falling down,\nI know that we'll be safe and sound.\n\n[Chorus]\nWe're safe and sound,\nWe're safe and sound,\nWe're safe and sound,\nWe're safe and sound,\n(Safe and sound)\nWe're safe and sound,\n(Safe and sound)\nWe're safe and sound,\n(Hold your ground)\nWe're safe and sound,\n(Safe and sound)\nWe're safe and sound.\n"
@@ -148,7 +156,7 @@ class CardProfile extends React.Component {
                 {
                     name: 'White Flag',
                     author: 'Delta Heavy',
-                    img: '../imgs/whiteflag.jpg',
+                    img: '../imgs/whiteflag.gif',
                     audio: '../sngs/Delta Heavy - White Flag.mp3',
                     duration: '3:14',
                     lyrics: "[Verse 1]\nOne night,\nOne more chance to say I'm sorry,\nAnd I can't believe a lie,\nSay you need me\nOne night,\nOne more chance to say I'm sorry,\nAnd I can't believe a lie,\nSay you need me,\nWave a white flag,\nI surrender, I surrender, I surrender,\nWave a white flag,\nI surrender, I surrender, I surrender,\nI surrender-\n\n[Chorus]\n[Verse 2]\nOne night,\nOne more chance to say I'm sorry\nAnd I can't believe a lie\nSay you need me\nOne night\nOne more chance to say I'm sorry\nAnd I can't believe a lie\nSay you need me\n\n[Verse 2]\nWave a white flag\nI surrender, I surrender, I surrender\nWave a white flag\nI surrender, I surrender, I surrender\nI surrender-\n\n[Chorus]\n[Outro]\nOne night\nOne more chance to say I'm sorry\nOne night\nOne more chance to say I'm sorry\nAnd I can't believe a lie\nSay you need me.\n"
@@ -156,10 +164,18 @@ class CardProfile extends React.Component {
                 {
                     name: 'Instant Crush',
                     author: 'Daft Punk',
-                    img: '../imgs/instantcrush.jpg',
+                    img: '../imgs/instantcrush.gif',
                     audio: '../sngs/Daft Punk - Instant Crush.mp3',
                     duration: '5:39',
                     lyrics: "[Verse 1]\nI didn't want to be the one to forget\nI thought of everything I'd never regret\nA little time with you is all that I get\nThat's all we need because it's all we can take\nOne thing I never see the same when you're 'round\nI don't believe in him, his lips on the ground\nI wanna take you to that place in the Roche\nBut no one gives us any time anymore\nHe asks me once if I'd look in on his dog\nYou made an offer for it, then you ran off\nI got this picture of us kids in my head\nAnd all I hear is the last thing that you said\n\n[Pre-Chorus]\nI listened to your problems, now listen to mine\nI didn't want to anymore, oh-oh-oh\n\n[Chorus]\nAnd we will never be alone again\n'Cause it doesn't happen every day\nKinda counted on you being a friend\nCan I give it up or give it away?\nNow I thought about what I wanna say\nBut I never really know where to go\nSo I chained myself to a friend\n'Cause I know it unlocks like a door\nAnd we will never be alone again\n'Cause it doesn't happen every day\nKinda counted on you being a friend\nCan I give it up or give it away?\nNow I thought about what I wanna say\nBut I never really know where to go\nSo I chained myself to a friend\nSome more again\n[Verse 2]\nIt didn't matter what they wanted to see\nHe thought he saw someone that looked just like me\nThe summer memory that just never dies\nWe worked too long and hard to give it no time\nHe sees right through me, it's so easy with lies\nCracks in the road that I would try and disguise\nHe runs his scissors at the seam in the wall\nHe cannot break it down or else he would fall\nOne thousand lonely stars hiding in the cold\nTake it, oh, I don't wanna sing anymore\n\n[Instrumental Break]\n\n[Pre-Chorus]\nI listened to your problems, now listen to mine\nI didn't want to anymore, oh-oh-oh\n\n[Chorus]\nAnd we will never be alone again\n'Cause it doesn't happen every day\nKinda counted on you being a friend\nCan I give it up or give it away?\nNow I thought about what I wanna say\nBut I never really know where to go\nSo I chained myself to a friend\n'Cause I know it unlocks like a door\nAnd we will never be alone again\n'Cause it doesn't happen every day\nKinda counted on you being a friend\nCan I give it up or give it away?\nNow I thought about what I wanna say\nBut I never really know where to go\nSo I chained myself to a friend\n'Cause I know it unlocks like a–\n\n[Bridge]\nI don't understand, don't get upset\nI'm not with you\nWe're swimming around,\n it's all I do When I'm with you.\n\n[Chorus]\nAnd we will never be alone again\n'Cause it doesn't happen every day\nKinda counted on you being a friend\nCan I give it up or give it away?\nNow I thought about what I wanna say\nBut I never really know where to go\nSo I chained myself to a friend\n'Cause I know it unlocks like a door\nAnd we will never be alone again\n'Cause it doesn't happen every day\nKinda counted on you being a friend\nCan I give it up or give it away?\nNow I thought about what I wanna say\nBut I never really know where to go\nSo I chained myself to a friend\n'Cause I know it unlocks like a door.\n"
+                },
+                {
+                    name: 'Heaven Up There',
+                    author: 'Palace',
+                    img: '../imgs/heavenupthere.jpg',
+                    audio: '../sngs/Palace -Heaven Up There.mp3',
+                    duration: '7:16',
+                    lyrics: "Well the night is gone\nAnd the shadows clear\nWhen I hear my song\nThe grave beneath\nSee what you want\nBut I'm the rising tide\nI'm a force of god\nA thousand lives\nI take what I want\n'Cause I'm the frightening sky\nI'm a selfish man\nDesigned to die\nBut is it heaven up there?\nIs it heaven up there?\nIs it heaven up there?\n'Cause it's hell down here\nBut even exist in space\nTo separate us from them\nTo know that your blood runs thin\nStill live with the truth within\nSo scrape up the bruise I wear\nAnd eradicate all my fears\nBut planning to walk these stairs\nI don't know where my future is\nI don't know where my future is\nIs it heaven up there?\nIs it heaven up there?\nIs it heaven up there?\nIs it heaven up there?\nSay I've been blind\nFor the use of my time\nI'm gonna be a better man\nThe ground that I stand\nThere's something out there\nJust know that I've cared (cared)\n\nDo this side by side\nMotion with the tide\nOoh ooh ooh\nOoh ooh ooh\nOoh ooh ooh\nOoh ooh ooh\nIs it heaven up there?\nIs it heaven up there?\nIs it heaven up there?\n'Cause it's hell down here\nYes, it's hell down here\nIs this heaven up there?\nI know there's heaven up there\nI know there's heaven up there\n'Cause there's heaven up there\n"
                 }
             ],
             pause: false});
@@ -553,7 +569,8 @@ class CardProfile extends React.Component {
                             React.createElement(Lyrics, {lyrics: lyrics}),
 
 
-                React.createElement(Footer) //Colocando componente anidado de prueba.
+                React.createElement(Footer), //Colocando componente anidado de prueba.
+                React.createElement(Hola)
             ));
     }
     
@@ -566,7 +583,7 @@ const Footer = () =>{
     return React.createElement(
       'div', 
       {id: 'greeting'}, 
-      React.createElement('h1', {}, 'HELLO WORLD IM HERE')
+      React.createElement('h1', {}, 'FOOTER')
     );
 };
 
@@ -589,13 +606,13 @@ const Lyrics = (props) =>{
 };
 
 //Misma funcion de arriba con formato tags
-/* function Hola(){
+ function Hola(){
     return (
       <div>
         <h1>Hello World</h1>
       </div>
     )
-} */
+}
 
 //Anidar componentes
 /* const CardProfileWithGreeting = () => { 
