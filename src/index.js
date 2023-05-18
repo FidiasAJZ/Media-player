@@ -570,7 +570,7 @@ class CardProfile extends React.Component {
 
 
                 React.createElement(Footer), //Colocando componente anidado de prueba.
-                React.createElement(Hola)
+                // React.createElement(Hola)
             ));
     }
     
@@ -579,13 +579,20 @@ class CardProfile extends React.Component {
 
 //Componente de prueba para anidar con el componente principal CardProfile
 
-const Footer = () =>{
-    return React.createElement(
-      'div', 
-      {id: 'greeting'}, 
-      React.createElement('h1', {}, 'FOOTER')
+
+const Footer = () => {
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '50%', margin: '10px 0' }}>
+          <i className="fab fa-github" style={{ marginRight: 'auto' }}></i>
+          <i className="fab fa-linkedin"></i>
+          <i className="fab fa-instagram" style={{ marginLeft: 'auto' }}></i>
+        </div>
+        <h6 style={{ margin: 0 }}>© Copyrights Group 4 Web Development4 2023</h6>
+      </div>
     );
-};
+  };
+  
 
 //Componente para la mostrar la letra de la canción.
 const Lyrics = (props) =>{
