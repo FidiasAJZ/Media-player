@@ -314,7 +314,7 @@ class CardProfile extends React.Component {
                 const audio = new Audio(currentSong.audio);
                 if (!this.state.pause) {
                     this.playerRef.play();
-                    olasMusica(currentSong.audio);
+                    //olasMusica(currentSong.audio);
                 } else {
                     this.playerRef.pause();
                 }
@@ -569,8 +569,8 @@ class CardProfile extends React.Component {
                             React.createElement(Lyrics, {lyrics: lyrics}),
 
 
-                React.createElement(Footer), //Colocando componente anidado de prueba.
-                React.createElement(Hola)
+                React.createElement(Footer) //Colocando componente anidado de prueba.
+                //React.createElement(Hola)
             ));
     }
     
