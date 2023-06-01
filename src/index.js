@@ -25,9 +25,11 @@ function _defineProperty(obj, key, value) {
 class CardProfile extends React.Component {
     
     
+    
     constructor(...args) {
         super(...args);
 
+        
         //El método "_defineProperty" se utiliza para asignar estas propiedades al objeto "this" dentro de la clase, permitiendo que accedan a ellas y las usen en otros métodos de la clase.
 
         //El estado de React es un objeto que contiene datos dinámicos y puede ser modificado durante la vida útil de un componente.
@@ -179,6 +181,8 @@ class CardProfile extends React.Component {
                 }
             ],
             pause: false});
+
+            
 
         //It calculates the total duration of the current audio file being played. It also calculates the percentage of the audio file that has already been played. Using this percentage, it sets the width of the "playheadRef" element to reflect the progress of the audio file being played.
         _defineProperty(this, "changeCurrentTime",
@@ -399,6 +403,8 @@ class CardProfile extends React.Component {
                     this.playerRef.play();
                 }
             });
+
+            
     }
 
     //ComponentDidMount es invocado inmediatamente después de que un componente sea montado en el DOM y se utiliza para agregar eventos escuchadores a los elementos del DOM.
@@ -423,6 +429,7 @@ class CardProfile extends React.Component {
         this.timelineRef.removeEventListener("mouseout", this.resetTimeLine);
     }
 
+    
 
     render() {
 
@@ -437,6 +444,9 @@ class CardProfile extends React.Component {
         const currentSong = musicList[index];
 
         const lyrics = currentSong.lyrics;
+
+        const name = lyrics.name;
+        
         
         /* console.log(song); */
         //Agregar el reproductor 
@@ -566,11 +576,13 @@ class CardProfile extends React.Component {
                                 rows: lyrics.split("\n").length,
                                 style: {resize:"none"}})), */
 
+                                
                             React.createElement(Lyrics, {lyrics: lyrics}),
-
+                            React.createElement(Name, {name: name}),
 
                 React.createElement(Footer), //Colocando componente anidado de prueba.
-                // React.createElement(Hola)
+                React.createElement(Name)
+
             ));
     }
     
@@ -613,13 +625,19 @@ const Lyrics = (props) =>{
 };
 
 //Misma funcion de arriba con formato tags
- function Hola(){
+ function Name  (props) {
+    const Lyrics = props.name;
     return (
-      <div>
-        <h1>Hello World</h1>
-      </div>
-    )
+          <div style={{position: 'absolute', display: 'flex', alignContent: 'start', justifyContent: 'center', marginTop: '10%', height:'175%', color: 'Highlight', fontFamily: 'inicial'}}>
+          <div>
+            <h4>Playing Music</h4>
+            </div>
+        </div>
+    );
 }
+
+
+
 
 //Anidar componentes
 /* const CardProfileWithGreeting = () => { 
@@ -691,7 +709,7 @@ function olasMusica(song){
     animate();
 }
 
-function drawVisualiser(bufferLength, x, barWidth, barHeight, dataArray){
+function drawVisualiser(bufferLength, _x, _barWidth, barHeight, dataArray){
     for (let i = 0; i < bufferLength; i++){
         barHeight = dataArray[i] * 1.2;
         ctx.save();
